@@ -9,7 +9,7 @@ int find_index(const int a[],int n,int target){
     }
     return -1;
 }
-
+饿哦阿尔
 int my_strlen(const char s[]){
     int i = 0;
     while (s[i]!='\0'){
