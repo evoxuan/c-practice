@@ -15,7 +15,7 @@ int main(){
             a[i]=a[i]-'A'+'a';
         }
     }
-    cout<< a<<endl;
+
     for (int i =0;i<eassy.size();i++){
      
         if (eassy[i]>='A'&&eassy[i]<='Z'){
@@ -26,8 +26,11 @@ int main(){
     int cnt= 0;
     int si = 0;
     int tp = a.size();
-    for (int i = 0;i<eassy.size()-tp;i++){
-        if (eassy.substr(i,tp)==a&&eassy[i+tp]==' '){
+    for (int i = 0;i<=eassy.size()-tp;i++){
+        
+        if (eassy.substr(i,tp)==a
+            &&(i+tp ==eassy.size()||eassy[i+tp]==' ')
+            &&(eassy[i-1]==' '||i == 0)){
             cnt ++;
             if (cnt ==1){
                 si = i;
