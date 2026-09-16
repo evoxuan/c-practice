@@ -9,7 +9,7 @@ int main(){
     for (int i = 0;i<4;i++)
     {
         string tp;
-        cin>>tp;
+        getline(cin,tp);
         s+=tp;
     }
     //统计
@@ -38,7 +38,7 @@ int main(){
             if (j==25){
                 break;
             }
-            cout << ' ';
+            cout <<' ';
         }
         cout << endl;
     }
