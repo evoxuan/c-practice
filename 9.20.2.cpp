@@ -22,7 +22,7 @@ int main(){
                 int cnt = 0;
                 for (int p = i-1;p<=i+1;p++){
                     for (int q = j-1;q<=j+1;q++){
-                        if (p<0||q<0){
+                        if (p<0||q<0||p>n||q>m){
                             continue;
                         }else{
                             if (a[p][q]=='*'){
